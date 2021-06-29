@@ -28,7 +28,7 @@ const App = (props) => {
   };
 
   const getPosts = async () => {
-    const postsdata = await axios.get("http://localhost:3001/posts")
+    const postsdata = await axios.get("http://technometal.herokuapp.com/posts")
     console.log(postsdata.data);
 
     setPosts(postsdata.data);

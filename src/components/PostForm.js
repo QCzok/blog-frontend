@@ -47,7 +47,7 @@ const PostForm = ({ post: propsPost, addNewPost, updatePost }) => {
         addNewPost(post);
       }
       setSaved(true);
-      await axios.put("http://localhost:3001/posts", post)
+      await axios.put("http://technometal.herokuapp.com/posts", post)
       //window.location.replace("/")
     } else {
       alert("Title required");

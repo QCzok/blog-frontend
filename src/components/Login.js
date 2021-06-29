@@ -11,7 +11,7 @@ const Login = (props) => {
             email: e.target.email.value,
             password: e.target.password.value // it means = the remaining value from the password input field that is targetted by the user in the from (e)
         }
-        await axios.post("http://localhost:3001/users/login", data)
+        await axios.post("http://technometal.herokuapp.com/users/login", data)
         .then((response) => localStorage.setItem(response.headers.get("x-auth")));
         // console.log(data);
     }
